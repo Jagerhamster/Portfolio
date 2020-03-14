@@ -6,15 +6,15 @@
     src: url("../fonts/saol-display-bold.svg") format("svg"); /* iOS 4.1- */
   }
 @font-face {
-    src: "../fonts/agipo.ttf";
+    src: url("../fonts/agipo.ttf");
     font-family: 'Agipo';
 }
 @font-face {
-    src: "../fonts/saol-display-bold.eot";
+    src: url("../fonts/saol-display-bold.eot");
     font-family: 'SaolDisplayBold';
 }
 @font-face {
-    src: "../fonts/folio-light";
+    src: url("../fonts/folio-light");
     font-family: 'Folio';
 }
 html {
