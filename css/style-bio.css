@@ -1,20 +1,20 @@
 @font-face {font-family: "SaolDisplay-Regular";
-    src: url("saol-display-bold.eot"); /* IE9*/
-    src: url("saol-display-bold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
-    src: url("saol-display-bold.woff2") format("woff2"); /* chrome、firefox */
-    src: url("saol-display-bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    src: url("saol-display-bold.svg#SaolDisplay-Regular") format("svg"); /* iOS 4.1- */
+    src: url("../fonts/saol-display-bold.eot"); /* IE9*/
+    src: url("../fonts/saol-display-bold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+    src: url("../fonts/saol-display-bold.woff2") format("woff2"); /* chrome、firefox */
+    src: url("../fonts/saol-display-bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    src: url("../fonts/saol-display-bold.svg#SaolDisplay-Regular") format("svg"); /* iOS 4.1- */
   }
 @font-face {
-    src: "/fonts/agipo.ttf";
+    src: "../fonts/agipo.ttf";
     font-family: 'Agipo';
 }
 @font-face {
-    src: "/fonts/saol-display-bold.eot";
+    src: "../fonts/saol-display-bold.eot";
     font-family: 'SaolDisplayBold';
 }
 @font-face {
-    src: "/fonts/folio-light";
+    src: "../fonts/folio-light";
     font-family: 'Folio';
 }
 html {
@@ -26,7 +26,10 @@ body {
 }
 .color-change-3x {
 	-webkit-animation: color-change-3x 4s linear infinite alternate both;
-	        animation: color-change-3x 4s linear infinite alternate both;
+            animation: color-change-3x 4s linear infinite alternate both;
+            -moz-animation: color-change-3x 4s linear infinite alternate both;
+            -ms-animation: color-change-3x 4s linear infinite alternate both;
+            -o-animation: color-change-3x 4s linear infinite alternate both;
 }
 @-webkit-keyframes color-change-3x {
     0% {
@@ -63,8 +66,16 @@ body {
     background-color: transparent;
     padding: 15px;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
     cursor: url("../img/pointer.png") 16 16, auto;
     transition: bottom .5s ease;
+    -webkit-transition:bottom .5s ease;
+    -moz-transition:bottom .5s ease;
+    -ms-transition:bottom .5s ease;
+    -o-transition:bottom .5s ease;
 }  
 #myBtn p {
     font-size: 0.875rem;
@@ -74,9 +85,17 @@ body {
     color: #658CF7;
     bottom: 52%;
     transition: bottom .5s ease;
+    -webkit-transition:bottom .5s ease;
+    -moz-transition:bottom .5s ease;
+    -ms-transition:bottom .5s ease;
+    -o-transition:bottom .5s ease;
 }
 .fade-in-myBtn {
     animation: fade-in-myBtn 0.5s;
+    -webkit-animation: fade-in-myBtn 0.5s;
+    -moz-animation: fade-in-myBtn 0.5s;
+    -ms-animation: fade-in-myBtn 0.5s;
+     -o-animation: fade-in-myBtn 0.5s;
 }  
 @keyframes fade-in-myBtn{
     0%{opacity: 0;}
@@ -91,10 +110,18 @@ p{
 .mouse{
     cursor: url("../img/mouse.png") 16 16, auto;
     transition: .5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
 }
 a{
     cursor: url("../img/pointer.png") 16 16, auto;
     transition: .5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
 }  
 .blue-text{
     color:#658CF7;
@@ -113,6 +140,10 @@ nav {
 }
 nav a {
     transition: color .5s ease;  
+    -webkit-transition:color .5s ease;
+    -moz-transition:color .5s ease;
+    -ms-transition:color .5s ease;
+    -o-transition:color .5s ease;
 }
 nav a:visited {
     color:#000;
@@ -126,7 +157,11 @@ nav .active:visited{
 }
 nav a:hover {
     color:#658CF7;
-    transition: color .5s ease;  
+    transition: color .5s ease; 
+    -webkit-transition:color .5s ease;
+    -moz-transition:color .5s ease;
+    -ms-transition:color .5s ease;
+    -o-transition:color .5s ease; 
 }
 .links-menu {
     display: flex;
@@ -146,11 +181,19 @@ nav a:hover {
     top: calc(50% - 5px);
     left: -300px;
     transition: left .5s ease;
+    -webkit-transition:left .5s ease;
+    -moz-transition:left .5s ease;
+    -ms-transition:left .5s ease;
+    -o-transition:left .5s ease; 
 }
 li:hover #home:after{
     top: calc(50% - 5px);
     left: -60px;
     transition: left .5s ease;
+    -webkit-transition:left .5s ease;
+    -moz-transition:left .5s ease;
+    -ms-transition:left .5s ease;
+    -o-transition:left .5s ease; 
 }
 main{
     padding: 0 8% 18% 8%;   
@@ -169,6 +212,10 @@ main{
 .cv-btn {
     padding-left: 35%;
     transition: right .5s ease; 
+    -webkit-transition:right .5s ease;
+    -moz-transition:right .5s ease;
+    -ms-transition:right .5s ease;
+    -o-transition:right .5s ease; 
 }
 .cv-btn a{
     display: flex;
@@ -181,11 +228,19 @@ main{
     letter-spacing: 2px;
     line-height: 17px;
     transition: all .5s ease;  
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition:all .5s ease; 
 }
 .cv-btn a:hover{
     color: #658CF7;
     margin-left: 20px; 
     transition: all .5s ease;  
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition:all .5s ease; 
 }
 .cv-btn img {
     align-items: center;
@@ -227,6 +282,10 @@ h4 {
     letter-spacing: 1px;
     font-size: 0.875rem;
     transform: rotate(-90deg) !important;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
     position: absolute;
     right: 0;
     top:50%;

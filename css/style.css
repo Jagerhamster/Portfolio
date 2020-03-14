@@ -1,20 +1,20 @@
 @font-face {font-family: "SaolDisplay-Regular";
-    src: url("saol-display-bold.eot"); /* IE9*/
-    src: url("saol-display-bold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
-    src: url("saol-display-bold.woff2") format("woff2"); /* chrome、firefox */
-    src: url("saol-display-bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    src: url("saol-display-bold.svg#SaolDisplay-Regular") format("svg"); /* iOS 4.1- */
+    src: url("../fonts/saol-display-bold.eot"); /* IE9*/
+    src: url("../fonts/saol-display-bold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+    src: url("../fonts/saol-display-bold.woff2") format("woff2"); /* chrome、firefox */
+    src: url("../fonts/saol-display-bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    src: url("../fonts/saol-display-bold.svg#SaolDisplay-Regular") format("svg"); /* iOS 4.1- */
   }
 @font-face {
-    src: "/fonts/agipo.ttf";
+    src: "../fonts/agipo.ttf";
     font-family: 'Agipo';
 }
 @font-face {
-    src: "/fonts/saol-display-bold.eot";
+    src: "../fonts/saol-display-bold.eot";
     font-family: 'SaolDisplayBold';
 }
 @font-face {
-    src: "/fonts/folio-light";
+    src: "../fonts/folio-light";
     font-family: 'Folio';
 }
 html {
@@ -27,14 +27,25 @@ body {
 .mouse{
     cursor: url("../img/mouse.png") 16 16, auto;
     transition: .5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
 }
 a{
     cursor: url("../img/pointer.png") 16 16, auto;
     transition: .5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
 }  
 .color-change-3x {
 	-webkit-animation: color-change-3x 4s linear infinite alternate both;
-	        animation: color-change-3x 4s linear infinite alternate both;
+            animation: color-change-3x 4s linear infinite alternate both;
+            -moz-animation: color-change-3x 4s linear infinite alternate both;
+            -ms-animation: color-change-3x 4s linear infinite alternate both;
+            -o-animation: color-change-3x 4s linear infinite alternate both;
 }
 @-webkit-keyframes color-change-3x {
     0% {
@@ -73,16 +84,32 @@ a{
     background-color: transparent;
     padding: 15px;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
     cursor: url("../img/pointer.png") 16 16, auto;
     transition: bottom .5s ease;
+    -webkit-transition: bottom .5s ease;
+    -moz-transition:bottom .5s ease;
+    -ms-transition:bottom .5s ease;
+    -o-transition:bottom .5s ease;
 }  
 #myBtn:hover {
     color: #658CF7;
     bottom: 52%;
     transition: bottom .5s ease;
+    -webkit-transition: bottom .5s ease;
+    -moz-transition:bottom .5s ease;
+    -ms-transition:bottom .5s ease;
+    -o-transition:bottom .5s ease;
 }
 .fade-in-myBtn {
     animation: fade-in-myBtn 0.5s;
+    -webkit-animation: fade-in-myBtn 0.5s;
+    -moz-animation: fade-in-myBtn 0.5s;
+    -ms-animation: fade-in-myBtn 0.5s;
+     -o-animation: fade-in-myBtn 0.5s;
 }  
 @keyframes fade-in-myBtn{
     0%{opacity: 0;}
@@ -120,6 +147,10 @@ nav .active:visited{
 nav a:hover {
     color:#658CF7;
     transition: .5s ease;  
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
 }
 .links-menu {
     display: flex;
@@ -139,11 +170,19 @@ nav a:hover {
     top: calc(50% - 5px);
     right: -300px;
     transition: right .5s ease;
+    -webkit-transition:right .5s ease;
+    -moz-transition:right .5s ease;
+    -ms-transition:right .5s ease;
+    -o-transition:right .5s ease;
 }
 li:hover #bio:after{
     top: calc(50% - 5px);
     right: -60px;
     transition: right .5s ease;
+    -webkit-transition:right .5s ease;
+    -moz-transition:right .5s ease;
+    -ms-transition:right .5s ease;
+    -o-transition:right .5s ease;
 }
 main{
     padding: 0 8% 18% 8%;   
@@ -188,6 +227,10 @@ h4 {
 }
 .bounce-arrow{
     animation: bounce-arrow 2s ease infinite;
+    -webkit-animation: bounce-arrow 2s ease infinite;
+    -moz-animation: bounce-arrow 2s ease infinite;
+    -ms-animation: bounce-arrow 2s ease infinite;
+    -o-animation: bounce-arrow 2s ease infinite;
 } 
 @keyframes bounce-arrow {
     0% {
@@ -204,6 +247,10 @@ h4 {
     letter-spacing: 1px;
     font-size: 0.875rem;
     transform: rotate(-90deg) !important;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
     position: absolute;
     right: 0;
     top:50%;
@@ -233,6 +280,10 @@ h4 {
     width: 100%;
     height: auto;
     transition: .5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
     backface-visibility: hidden;
 }
 .hover-featured {
@@ -240,6 +291,10 @@ h4 {
     justify-content: space-between;
     align-items: flex-end;
     transition: .5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -ms-transition:.5s ease;
+    -o-transition:.5s ease;
     opacity: 0;
     background-color: #658CF7;
     position: absolute;
