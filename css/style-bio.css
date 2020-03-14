@@ -1,9 +1,9 @@
 @font-face {font-family: "SaolDisplay-Regular";
     src: url("../fonts/saol-display-bold.eot"); /* IE9*/
-    src: url("../fonts/saol-display-bold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+    src: url("../fonts/saol-display-bold.eot") format("embedded-opentype"); /* IE6-IE8 */
     src: url("../fonts/saol-display-bold.woff2") format("woff2"); /* chrome、firefox */
     src: url("../fonts/saol-display-bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    src: url("../fonts/saol-display-bold.svg#SaolDisplay-Regular") format("svg"); /* iOS 4.1- */
+    src: url("../fonts/saol-display-bold.svg") format("svg"); /* iOS 4.1- */
   }
 @font-face {
     src: "../fonts/agipo.ttf";
