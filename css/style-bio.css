@@ -362,9 +362,11 @@ footer a{
     }
     #myBtn {
         right: -5%;
+        bottom: 40%;
     }
     #myBtn:hover {
         color: #000;
+        bottom: 42%;
     }
     .location{
         right: -5%;
@@ -401,22 +403,24 @@ footer a{
         line-height: 24px;
     }
     .parent-description {
-        display:block;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .parent-description p{
         margin-top: 0;
         flex-direction:column-reverse;
     }
     .parent-description > .img-container {
-        width:100%;
+        width: 100%;
         padding: 0;
+        position: static;
     }
     .left-column{
         width:100%;
     }
     #img-bio {
         width:100%;
-        margin: 10% 0 0 0;
+        margin: 10% 0 10% 0;
         position: static;
     }
     h3 {
@@ -483,9 +487,11 @@ footer a{
     }
     #myBtn {
         right: 8%;
+        bottom: 40%;
     }
     #myBtn:hover {
         color: #000;
+        bottom: 42%;
     }
     h1{
         padding: 15% 4% 4% 25%;
@@ -496,13 +502,19 @@ footer a{
         top: 43%;
     }
     .top-margin {
-        padding-top: 15%;
+        padding-top: 10%;
     }
     .parent-description {
-        align-items: center;
+        display:flex;
     }
     .parent-description p {
         margin-top: 0;
+    }
+    .parent-description > .img-container {
+        width: 50%;
+        padding-left: 25px;
+        padding-top: 25px;
+        position: sticky;
     }
     h3 {
         font-size: 2rem; 
@@ -522,6 +534,8 @@ footer a{
     #img-bio {
         width: 150%;
         margin: 0 0 0 0;
+        position: sticky;
+        top: 10%;
     }
     .mantra {
         font-size: 2rem;
